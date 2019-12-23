@@ -6,22 +6,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Login</title>
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
+
     <center>
         <main>
-            <h2>Ingresa a Safary</h1>
-
-                <input type="text" placeholder="Ingresa tu correo" name="uname" required>
-                <br>
-                <br>
-                <input type="text" placeholder="Ingresa tu contraseña" name="uname" required>
-                <br>
-                <br>
-                <button type="submit">Login</button>
+            <h1></h1>
+            <h2>Ingresa a Safary</h2>
+                <form onsubmit="return valida();"> 
+                    <input  type="text" id="user" placeholder="Ingresa tu correo" required>
+                    <br>
+                    <br>
+                    <input  type="password" id="pass" placeholder="Ingresa tu contraseña" required>
+                    <br>
+                    <br>
+                    <button type="submit">Login </button>
+                </form>
                 <p>
-                    yo ❤️ Safary
+                    yo <span style="color:red !important;">❤️</span> Safary
                 </p>
 
         </main>
@@ -29,7 +33,9 @@
 
         </footer>
 
+
     </center>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
